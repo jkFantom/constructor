@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="короткое описание">
+  <title>Планировщик квартиры</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+<svg style="display: none;">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" id="undo-icon">
+    <path
+      d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" id="delete-icon">
+    <path d="M16.95 5.636l1.414 1.414L7.05 18.364 5.636 16.95z"></path>
+    <path d="M18.364 16.95l-1.414 1.414L5.636 7.05 7.05 5.636z"></path>
+  </symbol>
+</svg>
+<article class="constructor">
+  <section class="scheduler">
+    <h1 class="scheduler__title">Планировщик квартиры</h1>
+    <div class="plan">
+      <div class="plan__frame"></div>
+      <div class="plan__grid">
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell plan__cell_success"></div>
+        <div class="plan__cell plan__cell_success"></div>
+        <div class="plan__cell plan__cell_success"></div>
+        <div class="plan__cell plan__cell_error"></div>
+        <div class="plan__cell plan__cell_error"></div>
+        <div class="plan__cell plan__cell_error"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+        <div class="plan__cell"></div>
+      </div>
+    </div>
+    <div class="scheduler__footer">
+      <ul class="scheduler__data">
+        <li class="scheduler__data-item">Площадь квадрата 1 кв. м.</li>
+        <li class="scheduler__data-item">Площадь квартиры 60 кв. м.</li>
+      </ul>
+      <div class="scheduler__actions">
+        <button class="scheduler__action undo">
+          <svg class="undo__icon" width="1em" height="1em" fill="currentColor">
+            <use xlink:href="#undo-icon"></use>
+          </svg>
+          Отменить последний шаг
+        </button>
+        <button class="scheduler__action button">
+          <svg class="button__icon" width="1em" height="1em" fill="currentColor">
+            <use xlink:href="#delete-icon"></use>
+          </svg>
+          Очистить квартиру
+        </button>
+      </div>
+    </div>
+  </section>
+  <aside class="constructor__aside">
+    <section class="objects">
+      <h2 class="objects__title">Выберите предметы мебели</h2>
+      <div class="objects__sections">
+        <section class="objects__section">
+          <h3 class="objects__subtitle">Cтолы</h3>
+          <div class="objects__list">
+            <div class="objects__item object">
+              <div class="figure figure_oval">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-1.jpg">
+              </div>
+              <div class="object__name">Обеденный стол</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-2.jpg">
+              </div>
+              <div class="object__name">Кухонный стол</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-3.jpg">
+              </div>
+              <div class="object__name">Письменный стол</div>
+            </div>
+          </div>
+        </section>
+        <section class="objects__section">
+          <h3 class="objects__subtitle">Стулья и кресла</h3>
+          <div class="objects__list">
+            <div class="objects__item object">
+              <div class="figure figure_round">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-4.jpg">
+              </div>
+              <div class="object__name">Табурет</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-5.jpg">
+              </div>
+              <div class="object__name">Стул</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-6.jpg">
+              </div>
+              <div class="object__name">Кресло</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure figure_round">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-7.jpg">
+              </div>
+              <div class="object__name">Кресло</div>
+            </div>
+          </div>
+        </section>
+        <section class="objects__section">
+          <h3 class="objects__subtitle">Диваны и кровати</h3>
+          <div class="objects__list">
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-8.jpg">
+              </div>
+              <div class="object__name">Кухонный диван</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-9.jpg">
+              </div>
+              <div class="object__name">Диван-кровать</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-10.jpg">
+              </div>
+              <div class="object__name">Кровать</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-11.jpg">
+              </div>
+              <div class="object__name">Кровать</div>
+            </div>
+          </div>
+        </section>
+        <section class="objects__section">
+          <h3 class="objects__subtitle">Шкафы, комоды, тумбы</h3>
+          <div class="objects__list">
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-12.jpg">
+              </div>
+              <div class="object__name">Большой шкаф</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-13.jpg">
+              </div>
+              <div class="object__name">Комод</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-14.jpg">
+              </div>
+              <div class="object__name">Комод</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-15.jpg">
+              </div>
+              <div class="object__name">Тумба</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-16.jpg">
+              </div>
+              <div class="object__name">Тумба</div>
+            </div>
+          </div>
+        </section>
+        <section class="objects__section">
+          <h3 class="objects__subtitle">Декор</h3>
+          <div class="objects__list">
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-17.jpg">
+              </div>
+              <div class="object__name">Лампа</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-18.jpg">
+              </div>
+              <div class="object__name">Растение</div>
+            </div>
+            <div class="objects__item object">
+              <div class="figure">
+                <div class="figure__overlay">
+                  <svg class="figure__button" width="1em" height="1em" fill="currentColor">
+                    <use xlink:href="#delete-icon"></use>
+                  </svg>
+                </div>
+                <img class="figure__img" src="img/object-19.jpg">
+              </div>
+              <div class="object__name">Пуфик</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </aside>
+</article>
+</body>
+
+</html>
